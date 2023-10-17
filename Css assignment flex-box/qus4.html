@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent-container {
+            width: 962px;
+            height: 427px;
+            background-color: #F4F2FD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+        }
+        .left-container {
+            width: 262px;
+            height: 363px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            
+        }
+        .main-content {
+            width: 198px;
+            height: 306px;
+            padding: 20px;
+        }
+        .middle-container {
+            width: 262px;
+            height: 363px;
+            border-radius: 8px;
+            background: #202842;
+            color: white;
+
+        }
+        .main-middle-content {
+            width: 198px;
+            height: 306px;
+            padding: 20px;
+        }
+        .right-container {
+            width: 262px;
+            height: 363px;
+            border-radius: 8px;
+            background: #FFFFFF;
+
+        }
+        .main-last-content {
+            width: 198px;
+            height: 306px;
+            padding: 20px;
+        }
+        li::before {
+            content: url("check-mark\ 1.png");
+            margin-right: 10px;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        button {
+            width: 156px;
+            height: 38px;
+            border-radius: 50px;
+            margin-top: 20px;
+            background-color: #202842;
+            color: white;
+            margin-left: 12px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            size: 16px;
+            line-height: 22px;
+        }
+        .main-middle-content li::before {
+            content: url("check-mark\ 1\ \(1\).png");
+        }
+        .main-middle-content button {
+            width: 156px;
+            height: 38px;
+            border-radius: 50px;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+            margin-left: 12px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            size: 16px;
+            line-height: 22px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="left-container">
+            <div class="main-content">
+                <h1>Free Plan</h1>
+                <p>For Personal</p>
+                <h2>$0</h2>
+                <li>1 Users</li>
+                <li>4 Web mails</li>
+                <li>Responsive website</li>
+                <li>Free SSL</li>
+                <button>Subscribe Now</button>
+            </div>
+        </div>
+        <div class="middle-container">
+            <div class="main-middle-content">
+                <h1>Basic Plan</h1>
+                <p>For Small Business</p>
+                <h2>$29</h2>
+                <li>4 Users</li>
+                <li>10 Web mails</li>
+                <li>Responsive website</li>
+                <li>Free SSL</li>
+                <button>Subscribe Now</button>
+            </div>
+        </div>
+
+        
+        <div class="right-container">
+            <div class="main-last-content">
+                <h1>Pro Plan</h1>
+                <p>For Enterprises</p>
+                <h2>$49</h2>
+                <li> Users</li>
+                <li> Web mails</li>
+                <li>Responsive website</li>
+                <li>Free SSL + SEO</li>
+                <button>Subscribe Now</button>
+
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>

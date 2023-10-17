@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        .container {
+            /*width: 1460px;
+            height: 1100px;*/
+            width: 91.25em;
+            height: 68.75em;
+            display: flex;
+        }
+        .left-container {
+            width: 60%;
+            flex-grow: 1;
+        }
+        .left-main-content {
+            padding-top: 50.69px;
+            padding-left: 101.39px;
+            padding-right: 43.74px;
+            height: 95%;
+            
+        }
+        .right-container {
+            width: calc(100% - 60%);
+        }
+        img {
+            height: 95%;
+            width: 100%;
+        }
+        header {
+            height: 81.11px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-data {
+            width: 168px;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+        .image-data img {
+            width: 66.92px;
+            height: 81.11px;
+        }
+        .info-data {
+            width: 321.81px;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+
+        }
+        li {
+            font-size: 15.01px;
+            padding-left: 30px;
+        }
+        #button-info {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+        #button1 {
+            color: white;
+            font-weight: 500;
+            font-size: 15.208px;
+            border-radius: 5px;
+            background-color: #FB792B;
+            text-align: center;
+            width: 56.2px;
+            height: 28.1px;
+        }
+        #button2 {
+            width: 71.2px;
+            height: 28.1px;
+            color: rgb(28, 27, 27);
+            font-weight: 500;
+            font-size: 15.208px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+        #button3 {
+            width: 103.2px;
+            height: 28.1px;
+            color: rgb(28, 27, 27);
+            font-weight: 500;
+            font-size: 15.208px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+
+
+        }
+        h1 {
+            padding-top: 100.62px;
+            font-size: 48.667px;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 32.444px;
+            font-weight: 500;
+            padding-top: 20px;
+            
+        
+        }
+        
+        .safety {
+            color: orange;
+            padding-right: 20px;
+        
+        }
+  
+  
+        .security {
+            color: green;
+            padding-right: 20px;
+        }
+  
+ 
+        .punctuality {
+            color: blue;
+            padding-right: 20px;
+        }
+        .detail {
+            height: 81.65px;
+        }
+        .ticket-info {
+            /*padding-top: 81.65px;*/
+            height: 44.61px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #Book-ticket {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: 700;
+            font-size: 18.25px;
+            color: white;
+            background-color: #213D77;
+            width: 178.89px;
+            height: 44.61px;
+            border-radius: 5px;
+            
+
+        }
+        #icon-ticket {
+            width: 20.28px;
+            Height:16.22px; 
+              
+        }
+        #Pnr-status {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18.25px;
+            color: black;
+            background-color: white;
+            width: 164.89px;
+            height: 44.61px;
+            border-radius: 5px;
+
+        }
+        #pnr-logo {
+            width: 20.28px;
+            Height:16.22px; 
+            
+
+        }
+        #charts-vacancy {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18.25px;
+            color: rgb(43, 42, 42);
+            background-color: white;
+            width: 218.89px;
+            height: 44.61px;
+            border-radius: 5px;
+        }
+        .journey {
+            height: 62px;
+        }
+        .journey-info {
+            /*padding-top: 62px;*/
+            height: 116.6px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid rgb(205, 202, 202);
+            border-radius: 10px;
+        }
+        .from-journey {
+            height: 96.6px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+        }
+        .from-journey img {
+            width: 32.44px;
+            height: 32.44px;
+        }
+        .journey-detail h2 {
+            font-weight: 700;
+            font-size: 25.35px;
+        }
+        .journey-detail p {
+            font-weight: 400;
+            font-size: 15.21px;
+            color: #333333;
+
+        }
+        .from-to-logo img {
+            width: 48.67px;
+            height: 48.67px;
+        }
+        .to-journey {
+            height: 96.6px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+        }
+        .journey-to-logo img {
+            width: 32.44px;
+            height: 32.44px;
+        }
+        .journet-to-detail p {
+            font-weight: 400;
+            font-size: 15.21px;
+            color: #333333;
+
+        }
+        .journet-to-detail h2 {
+            font-weight: 700;
+            font-size: 25.35px;
+
+        }
+        .date {
+            height: 20.28px;
+        }
+        .date-journey {
+            height: 116.6px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid rgb(205, 202, 202);
+            border-radius: 10px
+
+        }
+        .date-details {
+            height: 96.6px;
+            display: flex;
+            gap: 10px;
+        }
+        .from-date-logo img {
+            width: 32.44px;
+            height: 32.44px;
+        }
+        .date-content p {
+            font-weight: 400;
+            font-size: 15.21px;
+            color: #333333;
+        }
+        .date-content h2 {
+            font-weight: 700;
+            font-size: 25.35px;
+
+        }
+        .ticket-type {
+            height: 96.6px;
+            display: flex;
+            gap: 10px;
+
+        }
+        .ticket-type-logo img {
+            width: 32.44px;
+            height: 32.44px;
+
+        }
+        .ticket-details h2 {
+            font-weight: 700;
+            font-size: 25.35px;
+
+        }
+        .ticket-details p {
+            font-weight: 400;
+            font-size: 15.21px;
+            color: #333333;
+        }
+        .seat-type {
+            height: 96.6px;
+            display: flex;
+            gap: 10px;
+        }
+        .seat-type-logo img {
+            width: 32.44px;
+            height: 32.44px;
+        }
+        .seat-details h2 {
+            font-weight: 700;
+            font-size: 25.35px;
+        }
+        .seat-details p {
+            font-weight: 400;
+            font-size: 15.21px;
+            color: #333333;
+        }
+        .space {
+            height: 59.66px;
+        }
+        .button {
+            background: #01BB0A;
+            color: white;
+            width: 100%;
+            height: 81.11px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        #search {
+            font-size: 25.35px;
+            font-weight: 900;
+
+        }
+
+          
+        #arrow-logo {
+            width: 30.42px;
+            height: 30.42px;
+            display: inline-block;
+           
+        }
+        
+
+
+
+       
+        
+        
+
+        
+  
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="left-main-content">
+                <header>
+                    <div class="image-data">
+                        <img src="image 5.png" alt="rail" >
+                        <img src="image 6.png" alt="logo rail" >
+                    </div>
+                    <div class="info-data">
+                        <ul>
+                            <li>Ask Disha</li>
+                            <li>Contact us</li>
+                            <li>Alerts</li>
+                        </ul>
+                        <section id="button-info">
+                            <button id="button1">Login</button>
+                            <button id="button2">Register</button>
+                            <button id="button3">Agent login</button>
+                        </section>
+                        
+                    </div>
+                </header>
+                <h1>Indian Railways</h1>
+                <h2>
+                    <span class="safety">Safety</span>
+                    <span class="security">Security</span>
+                    <span class="punctuality">Punctuality</span>
+                </h2>
+                <div class="detail"></div>
+                <div class="ticket-info">
+                    <button id="Book-ticket">
+                        <span id="icon-ticket">
+                            <img src="Vector (1).png" alt="error">
+                        </span>
+                        <span id="ticket-content">Book Ticket</span>
+                    </button>
+                    <button id="Pnr-status">
+                        <span id="pnr-logo"><img src="pnrlogo.png" alt="error">
+                        </span>
+                        <span id="pnr-content">
+                            PNR Status
+                        </span>
+                    </button>
+                    <button id="charts-vacancy">
+                        <span id="chart-logo">
+                            <img src="chart.png" alt="error">
+                        </span>
+                        <span id="Chart-content">
+                            Charts/Vacancy
+                        </span>
+                    </button>
+                </div>
+                <div class="journey"></div>
+                <div class="journey-info">
+                    <div class="from-journey">
+                        <div class="journey-logo">
+                            
+                            <img src="journey-logo.png" alt="journey-logo">
+
+                        </div>
+                        <div class="journey-detail">
+                            <label for="from">From</label>
+                            <select name="From" id="from" >from</select>
+                            <h2>Banglore</h2>
+                            <p>KSR - Banglore</p>
+                        </div>
+
+                    </div>
+                    <div class="from-to-logo">
+                        <img src="logo from-to.png" alt="from-to logo">
+                    </div>
+                    <div class="to-journey">
+                        <div class="journey-to-logo">
+                            <img src="logo-to.png" alt="logo-to">
+                        </div>
+                        <div class="journet-to-detail">
+                            <label for="to">To</label>
+                            <select name="to" id="to">To</select>
+                            <h2>Kasaragod</h2>
+                            <p>KSD - Kasaragod</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="date"></div>
+                <div class="date-journey">
+                    <div class="date-details">
+                        <div class="from-date-logo">
+                            <img src="datelogo.png" alt="">
+                        </div>
+                        <div class="date-content">
+                            <label for="date">Date</label>
+                            <select name="date" id="date">Date</select>
+                            <h2>01 Aug 23</h2>
+                            <p>Tuesday</p>
+                        </div>
+                    </div>
+                    <div class="ticket-type">
+                        <div class="ticket-type-logo">
+                            <img src="ticket-type-logo.png" alt="">
+                        </div>
+                        <div class="ticket-details">
+                            <label for="class">Class</label>
+                            <select name="class" id="class">class</select>
+                            <h2>3A</h2>
+                            <p>AC 3 Tier</p>
+                        </div>
+                    </div>
+                    <div class="seat-type">
+                        <div class="seat-type-logo">
+                            <img src="seat-type-logo.png" alt="seatlogo">
+                        </div>
+                        <div class="seat-details">
+                            <label for="Seat type">Seat type</label>
+                            <select name="Seat type" id="Seat type">Seat type</select>
+                            <h2>TATKAL</h2>
+                            <p>AC 3 Tier</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="space"></div>
+                <button class="button">
+                    <span id="search">
+                        Search Train
+                    </span>
+                    <span id="arrow-logo"><img src="arrow.png" alt=""></span>
+                </button>
+                  
+            </div> 
+
+        </div>
+        <div class="right-container">
+            <img src="rail-img.png" alt="train" >
+        </div>
+    </div>
+</body>
+</html>
